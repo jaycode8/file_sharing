@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Upload</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <div class="container flex flex2">
+        <form action="/uploadImg" method="post" enctype="multipart/form-data" class="flex">
+            <img name="photo" id="photo">
+            <input type="file" name="myFile" id="images">
+            <label for="images">choose file</label>
+            <input type="submit" value="upload">
+        </form>
+        <form action="/uploadFiles" method="post" enctype="multipart/form-data" class="flex">
+            <img name="photo2" id="photo2">
+            <input type="file" name="myFiles" id="multimages" multiple>
+            <label for="multimages">choose your files</label>
+            <input type="submit" value="upload files">
+        </form>
+        <a href="/gallery" class="flex">View images</a>
+    </div>
+    <footer>
+        <span>&copy;<small></small> <a href='https://james-mumo.000webhostapp.com/'> JayTech </a>| All  Rights  Reserved.</span>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="css/gallery.css">
+    <!-- <link rel="stylesheet" href="icons/css/all.min.css">
+    <link rel="stylesheet" href="icons/css/fontawesome.min.css"> -->
+</head>
+<body>
+    <div class="mumbai flex">
+        <h2>
+            <%= heading %>
+        </h2>
+        <a href="/" id="homeTab"><i class="fas fa-home"></i></a>
+        <% images.map((image) =>{ %>
+            <section style="background: url('uploads/<%= image %>');">
+                <a href="uploads/<%= image %>" download="uploads/<%= image %>"><i class="fas fa-arrow-down"></i></a>
+            </section>
+        <% }) %>
+    </div>
+    <footer>
+        <span>&copy;<small></small> <a href='https://james-mumo.000webhostapp.com/'> JayTech </a>| All  Rights  Reserved.</span>
+    </footer>
+
+    <script>
+        document.querySelector('span small').innerHTML = new Date().getFullYear()
+    </script>
+    <script src="https://kit.fontawesome.com/a50253de37.js" crossorigin="anonymous"></script>
+</body>
+</html>
