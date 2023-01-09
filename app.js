@@ -6,14 +6,13 @@ dotenv.config();
 const PORT = process.env.PORT || 4600;
 const roters = require('./Routes/routes');
 const app = express();
-const home = require('./Routes/home')
 
 app.use(express.json());
 app.use(express.static(path.join(__dirname,'public')))
 app.set('view engine', 'ejs');
 app.set('views',path.join(__dirname,'views'));
 app.use(bodyParse.urlencoded({extended:false}));
-app.use('/', home);
+app.use('/', roters);
 
 
 app.listen(PORT, ()=>{
