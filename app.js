@@ -13,6 +13,7 @@ app.set('view engine', 'ejs');
 app.set('views',path.join(__dirname,'views'));
 app.use(bodyParse.urlencoded({extended:false}));
 app.use('/', roters);
+app.get('/',(req,res)=>{res.send('hello'});
 
 app.listen(PORT, ()=>{
     console.log(`server running at port ${PORT}`);
