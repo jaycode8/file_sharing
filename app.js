@@ -14,6 +14,7 @@ app.set('views',path.join(__dirname,'views'));
 app.use(bodyParse.urlencoded({extended:false}));
 app.use('/', roters);
 
+
 app.listen(PORT, ()=>{
     console.log(`server running at port ${PORT}`);
 });
