@@ -1,7 +1,12 @@
+@font-face {
+    font-family: 'Chilanka';
+    src: url('../fonts/Chilanka-Regular.ttf');
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Chilanka';
 }
 .flex {
     display: flex;
@@ -12,14 +17,20 @@
     align-items: flex-end;
     justify-content: space-around;
 }
+body{
+    background: #2c5364;
+}
 .container {
     width: 100%;
     height: 60vh;
-    background: brown;
+    /* background: brown; */
     position: relative;
+    background: #317773;
+    background: linear-gradient(to right, #334d50, #cbcaa5);
 }
 .container form {
-    background: #fff;
+    background: rgba(255,255,255,0.5);
+    border-radius: .4rem;
     margin-bottom: 10px;
     flex-direction: column;
 }
@@ -89,10 +100,10 @@ footer span {
     align-items: center;
 }
 footer span a {
-    margin: 1%;
+    margin: .5rem;
     text-decoration: none;
     transition: all 1s ease;
-    color: #fff;
+    color: #f2c633;
 }
 footer span a:hover {
     color: #f2c633;
@@ -117,5 +128,8 @@ small {
     }
     .container a {
         width: 50%;
+    }
+    form img {
+        width: 100%;
     }
 }

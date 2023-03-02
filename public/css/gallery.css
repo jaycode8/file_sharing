@@ -1,8 +1,16 @@
+@font-face {
+    font-family: 'Chilanka';
+    src: url('../fonts/Chilanka-Regular.ttf');
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    font-family: 'Chilanka';
+}
+body{
+    background: linear-gradient(to right, #334d50, #cbcaa5);
 }
 .container {
     position: relative;
@@ -117,10 +125,10 @@ footer span {
     align-items: center;
 }
 footer span a {
-    margin: 1%;
+    margin: .5rem;
     text-decoration: none;
     transition: all 1s ease;
-    color: #fff;
+    color: #f2c633;
 }
 footer span a:hover {
     color: #f2c633;
