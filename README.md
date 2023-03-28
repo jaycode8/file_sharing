@@ -1,7 +1,3 @@
-# file_shairing
-A web file shairing app
-https://fileshairing.onrender.com/
-
 <div align="center">
    <h1>file_shairing</h1>
    <p>A node js file-shairing web app.</p>
@@ -9,11 +5,11 @@ https://fileshairing.onrender.com/
 </div>
 
 #### Demo Screenshot
-<img src="https://raw.githubusercontent.com/jaycode8/Personal-Web-Portfolio/main/src/Components/About/Projects/img/funiture.png" />
+<img src="https://github.com/jaycode8/file_shairing/blob/main/public/cover/file_shairing.png" />
 
 <div align="center">
-   <img src="https://img.badgesize.io/https://github.com/jaycode8/Kasele-E-Commerce-.git" style="plastic"  />
-   <img src="https://img.shields.io/github/stars/jaycode8/Kasele-E-Commerce-?style=social" />
+   <img src="https://img.badgesize.io/https://github.com/jaycode8/file_shairing.git" style="plastic"  />
+   <img src="https://img.shields.io/github/stars/jaycode8/file_shairing.git?style=social" />
 </div>
 
 #### Prerequisites 
@@ -29,18 +25,17 @@ https://fileshairing.onrender.com/
   
  #### Run Locally 
   
- To run **Kasele-E-Commerce** locally, run this command on your git bash: 
+ To run **file-shairing** locally, run this command on your git bash: 
   
  Linux and macOS: 
   
  ```bash 
- sudo git clone https://github.com/jaycode8/Kasele-E-Commerce-.git
+ sudo git clone https://github.com/jaycode8/file_shairing.git
  ``` 
-  
  Windows: 
   
  ```bash 
- git clone https://github.com/jaycode8/Kasele-E-Commerce-.git
+ git clone https://github.com/jaycode8/file_shairing.git
  ```
 
 Run the web app in the terminal or cmd with
