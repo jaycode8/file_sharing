@@ -9,7 +9,7 @@
 
 <div align="center">
    <img src="https://img.badgesize.io/https://github.com/jaycode8/file_shairing.git" style="plastic"  />
-   <img src="https://img.shields.io/github/stars/jaycode8/file_shairing.git?style=social" />
+   <img src="https://img.shields.io/github/stars/jaycode8/file_shairing?style=social" />
 </div>
 
 #### Prerequisites 
@@ -44,7 +44,7 @@ Run the web app in the terminal or cmd with
  ```
 
 
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Open [http://localhost:4600/](http://localhost:4600/) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
