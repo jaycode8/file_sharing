@@ -2,38 +2,93 @@
     font-family: 'Chilanka';
     src: url('../fonts/Chilanka-Regular.ttf');
 }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Chilanka';
 }
+
 .flex {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .flex2 {
     align-items: flex-end;
     justify-content: space-around;
 }
-body{
+
+body {
     background: #2c5364;
 }
+
 .container {
     width: 100%;
     height: 60vh;
+    position: relative;
     /* background: brown; */
     position: relative;
     background: #317773;
     background: linear-gradient(to right, #334d50, #cbcaa5);
 }
+
+.container .user-profile {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 3.5rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.container .user-profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.container .profile {
+    position: absolute;
+    padding: 1rem;
+    top: 4.5rem;
+    right: 1rem;
+    width: 20rem;
+    height: 15rem;
+    border-radius: 1rem;
+    background: red;
+}
+
+.profile h3 {
+    text-align: center;
+}
+
+.profile div {
+    margin-top: 3rem;
+    display: grid;
+    gap: 1rem;
+}
+
+.profile .logoutbtn {
+    position: absolute;
+    bottom: 1rem;
+    padding: .5rem 2rem;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+}
+
 .container form {
-    background: rgba(255,255,255,0.5);
+    background: rgba(255, 255, 255, 0.5);
     border-radius: .4rem;
     margin-bottom: 10px;
     flex-direction: column;
 }
+
 input[type="file"] {
     width: 0.1px;
     height: 0.1px;
@@ -42,9 +97,11 @@ input[type="file"] {
     position: absolute;
     z-index: -1;
 }
+
 form img {
     width: 250px;
 }
+
 label {
     margin: 10px 0;
     border: 1px solid #121212;
@@ -53,10 +110,12 @@ label {
     cursor: pointer;
     transition: all 2s ease;
 }
+
 label:hover {
     background: #121212;
     color: #fff;
 }
+
 input[type="submit"],
 .container a {
     margin: 5px;
@@ -70,18 +129,21 @@ input[type="submit"],
     transition: all 2s ease;
     cursor: pointer;
 }
+
 input[type="submit"]:hover,
 .container a:hover {
     background: #fff;
     color: #121212;
     outline: 1px solid #121212;
 }
+
 .container a {
     position: absolute;
     bottom: -20%;
     text-decoration: none;
     width: 30%;
 }
+
 footer {
     width: 100%;
     height: 7vh;
@@ -93,21 +155,25 @@ footer {
     position: absolute;
     bottom: 0;
 }
+
 footer span {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 footer span a {
     margin: .5rem;
     text-decoration: none;
     transition: all 1s ease;
     color: #f2c633;
 }
+
 footer span a:hover {
     color: #f2c633;
 }
+
 small {
     font-size: unset;
     margin-left: 5px;
@@ -117,18 +183,22 @@ small {
     .container {
         padding: 0 10px !important;
     }
+
     .container form {
         width: 50%;
         margin: 10px 2px;
         font-size: 0.7rem;
     }
+
     input[type="submit"],
     .container a {
         font-size: 0.7rem;
     }
+
     .container a {
         width: 50%;
     }
+
     form img {
         width: 100%;
     }

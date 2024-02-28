@@ -11,7 +11,18 @@
 
 <body>
     <div class="container flex flex2">
-        <form action="/uploadImg" method="post" enctype="multipart/form-data" class="flex">
+        <div class="user-profile flex">
+            <img src="./images/avatar.jpeg" alt="avatar" />
+        </div>
+        <div class="profile">
+            <h3>User Profile</h3>
+            <div>
+                <p>username:</p>
+                <p>email:</p>
+            </div>
+            <button class="logoutbtn" onclick="logOut()">Log Out</button>
+        </div>
+        <form onsubmit="fileUpload(event)" class="flex">
             <img name="photo" id="photo" />
             <input type="file" name="myFile" id="images" />
             <label for="images">choose file</label>
@@ -23,11 +34,11 @@
             <label for="multimages">choose your files</label>
             <input type="submit" value="upload files" />
         </form>
-        <a href="/gallery" class="flex">View images and videos</a>
+        <a href="#" class="flex" id="glLink">View images and videos</a>
     </div>
     <footer>
         <span>&copy;<small></small>
-            <a href="https://james-mumo.000webhostapp.com/" target="_blank"> JayTech </a>|
+            <a href="https://jamesmumo.vercel.app/" target="_blank"> JayTech </a>|
             All Rights Reserved.</span>
     </footer>
     <script src="js/index.js"></script>

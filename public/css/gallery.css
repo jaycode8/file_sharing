@@ -2,6 +2,7 @@
     font-family: 'Chilanka';
     src: url('../fonts/Chilanka-Regular.ttf');
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -9,19 +10,23 @@
     text-decoration: none;
     font-family: 'Chilanka';
 }
-body{
+
+body {
     background: linear-gradient(to right, #334d50, #cbcaa5);
 }
+
 .container {
     position: relative;
     width: 100%;
     height: auto;
     margin-bottom: 3rem;
 }
+
 h2 {
     text-align: center;
     margin: 1rem 0;
 }
+
 #toggle {
     width: 3rem;
     height: 1.7rem;
@@ -36,17 +41,20 @@ h2 {
     justify-content: flex-end;
     background: #fff;
 }
+
 #toggle i {
     margin-right: 0.5rem;
     font-size: 0.9rem;
     cursor: pointer;
 }
+
 .grid-box {
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     padding: 0.5rem;
 }
+
 .videoData {
     transform: scale(0);
     position: absolute;
@@ -55,12 +63,15 @@ h2 {
     row-gap: 0 !important;
     width: 100%;
 }
+
 .videoData.transform {
     transform: scale(1);
 }
+
 .imageData.transform {
     transform: scale(0);
 }
+
 #homeTab {
     position: fixed;
     right: 0.9rem;
@@ -74,15 +85,18 @@ h2 {
     scale: 0.9;
     transition: all 2s ease;
 }
+
 #homeTab:hover {
     scale: 1.1;
 }
+
 .photos {
     aspect-ratio: 0.8/1;
     border: 0.1rem solid #333;
     border-radius: 0.3rem;
     position: relative;
 }
+
 img {
     max-width: 100%;
     width: 100%;
@@ -91,22 +105,26 @@ img {
     object-fit: cover;
     border-radius: 0.3rem;
 }
+
 .photos i {
     position: absolute;
     bottom: 10px;
     right: 10px;
     color: #fff;
 }
+
 .videos {
     aspect-ratio: 1/1;
     border-radius: 0.3rem;
 }
+
 video {
     max-width: 20rem;
     width: 100%;
     aspect-ratio: 1.5/1;
     border-radius: 0.3rem;
 }
+
 footer {
     width: 100%;
     height: 7vh;
@@ -118,30 +136,36 @@ footer {
     position: fixed;
     bottom: 0;
 }
+
 footer span {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 footer span a {
     margin: .5rem;
     text-decoration: none;
     transition: all 1s ease;
     color: #f2c633;
 }
+
 footer span a:hover {
     color: #f2c633;
 }
+
 small {
     font-size: unset;
     margin-left: 5px;
 }
+
 @media (min-width: 40em) {
     .photos:nth-child(1) {
         grid-row: span 2;
         grid-column: span 2;
     }
+
     .photos:nth-child(5) {
         grid-row: span 2;
         grid-column: span 2;

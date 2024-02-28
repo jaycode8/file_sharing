@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>signIn-signUp</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/forms.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="container" class="container">
+        <div class="row">
+            <div class="col align-items-center flex-col sign-up">
+                <div class="form-wrapper align-items-center">
+                    <form class="form sign-up" onsubmit="handleSignup(event)" name="signupForm">
+                        <div class="input-group">
+                            <i class='fa-solid fa-user'></i>
+                            <input type="text" placeholder="Username" name="username" required>
+                        </div>
+                        <div class="input-group">
+                            <i class='fa-solid fa-envelope'></i>
+                            <input type="email" placeholder="Email" name="email" required>
+                        </div>
+                        <div class="input-group">
+                            <i class='fa-solid fa-lock'></i>
+                            <input type="password" placeholder="Password" name="password" required>
+                        </div>
+                        <button type="submit">
+                            Sign up
+                        </button>
+                        <p>
+                            <span>
+                                Already have an account?
+                            </span>
+                            <b onclick="toggle()" class="pointer">
+                                Sign in here
+                            </b>
+                        </p>
+                    </form>
+                </div>
+
+            </div>
+            <div class="col align-items-center flex-col sign-in">
+                <div class="form-wrapper align-items-center">
+                    <form class="form sign-in" onsubmit="handleSignin(event)" name="signinForm">
+                        <div class="input-group">
+                            <i class='fa-solid fa-user'></i>
+                            <input type="text" placeholder="Username" name="uname" required>
+                        </div>
+                        <div class="input-group">
+                            <i class='fa-solid fa-lock'></i>
+                            <input type="password" placeholder="Password" name="passw" required>
+                        </div>
+                        <button type="submit">
+                            Sign in
+                        </button>
+                        <p>
+                            <span>
+                                Don't have an account?
+                            </span>
+                            <b onclick="toggle()" class="pointer">
+                                Sign up here
+                            </b>
+                        </p>
+                    </form>
+                </div>
+                <div class="form-wrapper">
+
+                </div>
+            </div>
+        </div>
+        <div class="row content-row">
+            <div class="col align-items-center flex-col">
+                <div class="text sign-in">
+                    <h2>
+                        Welcome
+                    </h2>
+
+                </div>
+                <div class="img sign-in">
+
+                </div>
+            </div>
+            <div class="col align-items-center flex-col">
+                <div class="img sign-up">
+
+                </div>
+                <div class="text sign-up">
+                    <h2>
+                        Join with us
+                    </h2>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/forms.js"></script>
+    <script src="https://kit.fontawesome.com/a50253de37.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
